@@ -1,0 +1,15 @@
+.titleFinalPage{
+    font-size: 4em;
+    font-family: 'Staatliches', cursive;
+    text-align: center;
+    padding-top: 11vh;
+    text-shadow: 1px 1px 5px gray;
+}
+
+.pointsFinalPage{
+    font-size: 4em;
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 5px black;
+}

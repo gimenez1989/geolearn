@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+.quizzGame{
+    min-height: 100vh;
+    -webkit-animation: random 15s infinite;
+    animation: random 15s infinite;
+}
+
+.question > h2{
+    font-family: 'Staatliches', cursive;
+    font-size: 2.5em;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.question > img{
+    display: block;
+    margin: auto;
+    width: 80%;
+    max-width: 400px;
+}
+
+.gameOptions{
+    display: block;
+    width: fit-content;
+    margin: auto;
+    margin-top: 1em;
+}
+
+.gameOptions > button{
+    display: inline-flex;
+    font-family: 'Rubik', sans-serif;
+    font-size: 2em;
+    border: none;
+    border-radius: 0.1em;
+    cursor: pointer;
+    padding: 3vw;
+    margin: 1vw;
+    box-shadow: 0px 0px 5px;
+}
+
+.continueButton{
+    display: block;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 0.1em;
+    cursor: pointer;
+    padding: 2vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2vh;
+    box-shadow: 0px 0px 5px;
+}
+
+.correct{
+    background-color: rgb(100,180,120);
+}
+.incorrect{
+    background-color: rgb(200,60,80);
+}
+
+
+@keyframes random {
+    0% {background-color: #abef89;}
+    15% { background-color: #66fa7c; } 
+    30% { background-color: #5ffbe3; } 
+    45% { background-color: #8ea8f5; }
+    60% { background-color: #1ff2e0; } 
+    75% { background-color: #6cfe6f; } 
+    100% {background-color: #abef89;}
+}
+
+@media (max-width: 600px) {
+    .gameOptions > button{
+        display: block;
+        width: 80vw;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+}

@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Oswald:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.quizzSelector{
+    -webkit-animation: random 15s infinite;
+    animation: random 15s infinite;
+    padding-bottom: 1vw;
+}
+
+.selectorTitle{
+    text-align: center;
+    font-family: 'League Gothic', sans-serif;
+    font-size: 3em;
+    padding: 3vw;
+}
+
+.continentQuizzSelector{
+    background-color: rgba(250,250,250,0.8);
+    margin-bottom: 1em;
+    padding: 0.2em;
+    font-family: 'Oswald', sans-serif;
+}
+
+.gameTypeQuizzSelector{
+    background-color: rgba(250,250,250,0.8);
+    padding: 0.2em;
+    font-family: 'Oswald', sans-serif;
+}
+
+.continentQuizzSelector > label{
+    display: block;
+    margin: 1em;
+    font-size: 1.2em;
+}
+
+.gameTypeQuizzSelector > label{
+    display: block;
+    margin: 1em;
+    font-size: 1.2em;
+}
+
+.continentQuizzSelector > h3{
+    display: block;
+    margin: 1em;
+    font-size: 1.4em;
+}
+
+.gameTypeQuizzSelector > h3{
+    display: block;
+    margin: 1em;
+    font-size: 1.4em;
+}
+
+.selectorBtn{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+    font-size: 2.5em;
+    border-radius: 1vw;
+    padding: 0.3em;
+    border: none;
+    cursor: pointer;
+    font-family: 'League Gothic', sans-serif;
+    transition-duration: 0.2s;
+}
+
+.selectorBtn:hover{
+    font-size: 2.7em;
+}
+
+    
+@keyframes random {
+    0% {background-color: #abef89;}
+    15% { background-color: #66fa7c; } 
+    30% { background-color: #5ffbe3; } 
+    45% { background-color: #8ea8f5; }
+    60% { background-color: #1ff2e0; } 
+    75% { background-color: #6cfe6f; } 
+    100% {background-color: #abef89;}
+}
